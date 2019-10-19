@@ -1,0 +1,1281 @@
+/*====================共用區====================*/
+* {
+    box-sizing: border-box;
+    font-family: "Microsoft JhengHei";
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,img,div,span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*====================桌機開始====================*/
+@media screen and (min-width:1024px) {
+    #banner {
+        height: 700px;
+        background-color: #0097A7;
+        background-image: url('../img/rhino banner-20190930.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    #babg-squ {
+        background-image: url('../img/rhino-banner-squ-cs6-20191012.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+    }
+
+    #babg-squ .box5 {
+        border: 3px #F6F5DA solid;
+        border-radius: 30px;
+    }
+
+    #banner .main_sub {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    #banner h1,#banner p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #F6F5DA;
+        padding-top: 10px;
+    }
+
+
+    #time {
+        width: 100%;
+        margin: 0;
+        height: auto; /*350px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #time img {
+        padding-top: 25px;
+        width: 50px;
+    }
+
+    .box1 {
+        background: rgba(225, 207, 183, 0.8);
+        height:350px;
+    }
+
+    .time_text {
+        margin: 10px;
+        padding: 20px;
+        background-color: rgba(246, 245, 218, 0.7);
+    }
+
+    .time_text li {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    #question {
+        padding-top: 10px;
+        background-color: #708296;
+        height: auto; /*510px*/
+    }
+
+    #question h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    #question .col-4 h4 {
+        background-color: #DBDBDB;
+        color: #47578F;
+        text-align: center;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #question .col-4 h5 {
+        background-color: #F6F5DA;
+        text-align: center;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #question .col-4 p {
+        background-color: #F6F5DA;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #question .col-4 img {
+        width: 50px;
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #teacher {
+        width: 100%;
+        margin: 0;
+        height: auto; /*430px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .box6 {
+        background-color: rgba(163, 199, 197, 0.8);
+        height: 430px;
+        padding-top: 30px;
+    }
+
+    #teacher .th_pic img {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        background-color: #ffffff;
+        border: 8px #0097A7 solid;
+    }
+
+    #teacher h4 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #teacher p {
+        padding-top: 20px;
+        font-size: 26px;
+        text-align: left;
+        text-align: justify;
+    }
+
+    #slogan {
+        background-color: #F6F5DA;
+        height: 90px;
+        padding-top: 15px;
+    }
+
+    #slogan h4 {
+        text-align: center;
+        color: #000000;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+
+    #article {
+        width: 100%;
+        margin: 0;
+        height: auto; /*830px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #article .col-8 h3 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        color: #ffffff;
+        text-shadow: 7px 7px 5px #000000;
+    }
+
+    #article .col-8 p {
+        padding-top: 15px;
+        font-size: 22px;
+        text-align: left;
+        text-align: justify;
+        color: #ffffff;
+        text-shadow: 7px 7px 5px #000000;
+    }
+
+    #article .col-6 h4 {
+        background-color: #C4B1BD;
+        color: #000000;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #article .col-6 p {
+        background-color: #F6F5DA;
+        text-align: center;
+        font-size: 22px;
+        text-align: justify;
+        color: #000000;
+        padding: 10px;
+        text-shadow: none;
+    }
+
+    .img-car {
+        width: 100%;
+        background-image: url('../img/IT360-Rhino product/15607766-car-design-wire-model-my-own-design.jpg');
+    }
+
+    .box2 {
+        background: rgba(72, 115, 130, 0.8);
+        height: 830px;
+    }
+
+    #target {
+        background-color: #a3c7c5;
+        height: 440px;
+        padding-top: 10px;
+    }
+
+    #target h3 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #target img {
+        padding-top: 20px;
+        width: 400px;
+        height: 250px;
+    }
+
+    #target .li-img {
+        list-style-image: url('../icon/check-square-regular-25px.png');
+        padding-left: 50px;
+    }
+
+    #target .col-6 .itm {
+        padding-top: 30px;
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 1.7;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #target .itm_text {
+        font-size: 18px;
+        color: #000000;
+        line-height: 1.7;
+        text-align: left;
+        margin-left: 2em;
+        font-weight: normal;
+    }
+
+    #learn {
+        width: 100%;
+        margin: 0;
+        height: auto; /*460px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #learn .li-img2 {
+        list-style-image: url(../icon/hand-point-right-solid-25px.png);
+        padding-left: 30px;
+    }
+
+    .learn_text li {
+        font-size: 22px;
+        line-height: 1.7;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .box3 {
+        background: rgba(246, 245, 218, 0.8);
+        height: 460px;
+    }
+
+    #learn .col-6 {
+        padding-top: 50px;
+    }
+
+    #learn img {
+        width: 400px;
+        height: 250px;
+    }
+
+    #contact {
+        height: auto;/*680px*/
+        background-color: #708296;
+    }
+
+    #contact h3 {
+        font-size: 26px;
+        font-weight: bold;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    #footer_box {
+        background-color: #F6F5DA;
+        height: 580px;
+        padding-top: 30px;
+    }
+
+    #footer_left {
+        padding-top: 120px;
+        padding-left: 30px;
+    }
+
+    #footer_box .us {
+        width: 370px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    #footer_box .us_adr {
+        width: 183px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    #footer_box .us_qt {
+        width: 370px;
+        height: 150px;
+        resize: none;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    .box4 {
+        width: 370px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .box4 .check_box {
+        width: 20px;
+        height: 20px;
+    }
+
+    .ptm .btn_sub {
+        width: 150px;
+        height: 35px;
+        background-color: #c4b1bd;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+/*====================桌機結束====================*/
+
+/*====================平板開始====================*/
+@media screen and (min-width:641px) and (max-width:1023px){
+    #banner {
+        height: 700px;
+        background-color: #0097A7;
+        background-image: url('../img/rhino banner-20190930.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    #babg-squ {
+        background-image: url('../img/rhino-banner-squ-cs6-20191012.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+    }
+
+    #babg-squ .box5 {
+        border: 3px #F6F5DA solid;
+        border-radius: 30px;
+    }
+
+    #banner .main_sub {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #banner h1,#banner p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #F6F5DA;
+        padding-top: 10px;
+    }
+
+
+    #time {
+        width: 100%;
+        margin: 0;
+        height: auto; /*350px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #time img {
+        padding-top: 25px;
+        width: 50px;
+    }
+
+    .box1 {
+        background: rgba(225, 207, 183, 0.8);
+        height:350px;
+    }
+
+    .time_text {
+        margin: 10px;
+        padding: 20px;
+        background-color: rgba(246, 245, 218, 0.7);
+    }
+
+    .time_text li {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    #question {
+        padding-top: 10px;
+        background-color: #708296;
+        height: auto; /*510px*/
+    }
+
+    #question h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    #question .col-4{
+        width: calc(100% / 12 *6);
+    }
+
+    #question .col-4 h4 {
+        background-color: #DBDBDB;
+        color: #47578F;
+        text-align: center;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #question .col-4 h5 {
+        background-color: #F6F5DA;
+        text-align: center;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #question .col-4 p {
+        background-color: #F6F5DA;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #question .col-4 img {
+        width: 50px;
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #teacher {
+        width: 100%;
+        margin: 0;
+        height: auto; /*430px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .box6 {
+        background-color: rgba(163, 199, 197, 0.8);
+        height: 700px;
+        padding-top: 30px;
+    }
+
+    #teacher .col-5 {
+        width: calc(100% / 12 *12);
+    }
+
+    #teacher .th_pic img {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        background-color: #ffffff;
+        border: 8px #0097A7 solid;
+    }
+
+    #teacher .col-7 {
+        width: calc(100% / 12 *12);
+    }
+
+    #teacher h4 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #teacher p {
+        padding-top: 20px;
+        font-size: 26px;
+        text-align: left;
+        text-align: justify;
+    }
+
+    #slogan {
+        background-color: #F6F5DA;
+        height: 90px;
+        padding-top: 15px;
+    }
+
+    #slogan h4 {
+        text-align: center;
+        color: #000000;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+
+    #article {
+        width: 100%;
+        margin: 0;
+        height: auto; /*830px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #article .col-8{
+        width: calc(100% / 12 *10);
+    }
+
+    #article .col-8 h3 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        color: #ffffff;
+        text-shadow: 7px 7px 5px #000000;
+    }
+
+    #article .col-8 p {
+        padding-top: 15px;
+        font-size: 22px;
+        text-align: left;
+        text-align: justify;
+        color: #ffffff;
+        text-shadow: 7px 7px 5px #000000;
+    }
+
+    #article .col-6{
+        width: calc(100% / 12 *9);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #article .col-6 h4 {
+        background-color: #C4B1BD;
+        color: #000000;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #article .col-6 p {
+        background-color: #F6F5DA;
+        text-align: center;
+        font-size: 22px;
+        text-align: justify;
+        color: #000000;
+        padding: 10px;
+        text-shadow: none;
+    }
+
+    .img-car {
+        width: 100%;
+        background-image: url('../img/IT360-Rhino product/15607766-car-design-wire-model-my-own-design.jpg');
+    }
+
+    .box2 {
+        background: rgba(72, 115, 130, 0.8);
+        height: 1310px;
+    }
+
+    #target {
+        background-color: #a3c7c5;
+        height: auto; /*440px*/ 
+        padding-top: 10px;
+    }
+
+    #target .col-6{
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #target h3 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #target img {
+        padding-top: 20px;
+        width: 400px;
+        height: 250px;
+    }
+
+    #target .li-img {
+        list-style-image: url('../icon/check-square-regular-25px.png');
+        padding-left: 50px;
+    }
+
+    #target .col-6 .itm {
+        padding-top: 15px;
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 1.7;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #target .itm_text {
+        font-size: 18px;
+        color: #000000;
+        line-height: 1.7;
+        text-align: left;
+        margin-left: 2em;
+        font-weight: normal;
+    }
+
+    #learn {
+        width: 100%;
+        margin: 0;
+        height: auto; /*460px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #learn .col-6{
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    #learn .li-img2 {
+        list-style-image: url(../icon/hand-point-right-solid-25px.png);
+        padding-left: 30px;
+    }
+
+    .learn_text li {
+        font-size: 22px;
+        line-height: 1.7;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .box3 {
+        background: rgba(246, 245, 218, 0.8);
+        height: 570px;
+    }
+
+    /*#learn .col-6 {
+        padding-top: 50px;
+    }*/
+
+    #learn img {
+        width: 400px;
+        height: 250px;
+    }
+
+    #contact {
+        height: auto;/*680px*/
+        background-color: #708296;
+    }
+
+    #contact h3 {
+        font-size: 26px;
+        font-weight: bold;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    #footer_box {
+        background-color: #F6F5DA;
+        height: auto; /*580px*/
+        padding-top: 30px;
+    }
+
+    #footer_left {
+        /*padding-top: 20px;
+        padding-left: 30px;*/
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #footer_box .col-6{
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #footer_box .us {
+        width: 370px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    #footer_box .us_adr {
+        width: 183px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    #footer_box .us_qt {
+        width: 370px;
+        height: 150px;
+        resize: none;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    .box4 {
+        width: 370px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .box4 .check_box {
+        width: 20px;
+        height: 20px;
+    }
+
+    .ptm .btn_sub {
+        width: 150px;
+        height: 35px;
+        background-color: #c4b1bd;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+    }
+}
+/*====================平板結束====================*/
+
+/*====================手機開始====================*/
+@media screen and (max-width:640px){
+    @media screen and (min-width:641px) and (max-width:1023px){
+    #banner {
+        height: 700px;
+        background-color: #0097A7;
+        background-image: url('../img/rhino banner-20190930.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    #babg-squ {
+        background-image: url('../img/rhino-banner-squ-cs6-20191012.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+    }
+
+    #babg-squ .box5 {
+        border: 3px #F6F5DA solid;
+        border-radius: 30px;
+    }
+
+    #banner .main_sub {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #banner h1,#banner p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #F6F5DA;
+        padding-top: 10px;
+    }
+
+
+    #time {
+        width: 100%;
+        margin: 0;
+        height: auto; /*350px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #time img {
+        padding-top: 25px;
+        width: 50px;
+    }
+
+    .box1 {
+        background: rgba(225, 207, 183, 0.8);
+        height:350px;
+    }
+
+    .time_text {
+        margin: 10px;
+        padding: 20px;
+        background-color: rgba(246, 245, 218, 0.7);
+    }
+
+    .time_text li {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    #question {
+        padding-top: 10px;
+        background-color: #708296;
+        height: auto; /*510px*/
+    }
+
+    #question h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    #question .col-4{
+        width: calc(100% / 12 *6);
+    }
+
+    #question .col-4 h4 {
+        background-color: #DBDBDB;
+        color: #47578F;
+        text-align: center;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #question .col-4 h5 {
+        background-color: #F6F5DA;
+        text-align: center;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #question .col-4 p {
+        background-color: #F6F5DA;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #question .col-4 img {
+        width: 50px;
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #teacher {
+        width: 100%;
+        margin: 0;
+        height: auto; /*430px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .box6 {
+        background-color: rgba(163, 199, 197, 0.8);
+        height: 700px;
+        padding-top: 30px;
+    }
+
+    #teacher .col-5 {
+        width: calc(100% / 12 *12);
+    }
+
+    #teacher .th_pic img {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        background-color: #ffffff;
+        border: 8px #0097A7 solid;
+    }
+
+    #teacher .col-7 {
+        width: calc(100% / 12 *12);
+    }
+
+    #teacher h4 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #teacher p {
+        padding-top: 20px;
+        font-size: 26px;
+        text-align: left;
+        text-align: justify;
+    }
+
+    #slogan {
+        background-color: #F6F5DA;
+        height: 90px;
+        padding-top: 15px;
+    }
+
+    #slogan h4 {
+        text-align: center;
+        color: #000000;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+
+    #article {
+        width: 100%;
+        margin: 0;
+        height: auto; /*830px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #article .col-8{
+        width: calc(100% / 12 *10);
+    }
+
+    #article .col-8 h3 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        color: #ffffff;
+        text-shadow: 7px 7px 5px #000000;
+    }
+
+    #article .col-8 p {
+        padding-top: 15px;
+        font-size: 22px;
+        text-align: left;
+        text-align: justify;
+        color: #ffffff;
+        text-shadow: 7px 7px 5px #000000;
+    }
+
+    #article .col-6{
+        width: calc(100% / 12 *9);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #article .col-6 h4 {
+        background-color: #C4B1BD;
+        color: #000000;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #article .col-6 p {
+        background-color: #F6F5DA;
+        text-align: center;
+        font-size: 22px;
+        text-align: justify;
+        color: #000000;
+        padding: 10px;
+        text-shadow: none;
+    }
+
+    .img-car {
+        width: 100%;
+        background-image: url('../img/IT360-Rhino product/15607766-car-design-wire-model-my-own-design.jpg');
+    }
+
+    .box2 {
+        background: rgba(72, 115, 130, 0.8);
+        height: 1310px;
+    }
+
+    #target {
+        background-color: #a3c7c5;
+        height: auto; /*440px*/ 
+        padding-top: 10px;
+    }
+
+    #target .col-6{
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #target h3 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #target img {
+        padding-top: 20px;
+        width: 400px;
+        height: 250px;
+    }
+
+    #target .li-img {
+        list-style-image: url('../icon/check-square-regular-25px.png');
+        padding-left: 50px;
+    }
+
+    #target .col-6 .itm {
+        padding-top: 15px;
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 1.7;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #target .itm_text {
+        font-size: 18px;
+        color: #000000;
+        line-height: 1.7;
+        text-align: left;
+        margin-left: 2em;
+        font-weight: normal;
+    }
+
+    #learn {
+        width: 100%;
+        margin: 0;
+        height: auto; /*460px*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #learn .col-6{
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    #learn .li-img2 {
+        list-style-image: url(../icon/hand-point-right-solid-25px.png);
+        padding-left: 30px;
+    }
+
+    .learn_text li {
+        font-size: 22px;
+        line-height: 1.7;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .box3 {
+        background: rgba(246, 245, 218, 0.8);
+        height: 570px;
+    }
+
+    /*#learn .col-6 {
+        padding-top: 50px;
+    }*/
+
+    #learn img {
+        width: 400px;
+        height: 250px;
+    }
+
+    #contact {
+        height: auto;/*680px*/
+        background-color: #708296;
+    }
+
+    #contact h3 {
+        font-size: 26px;
+        font-weight: bold;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    #footer_box {
+        background-color: #F6F5DA;
+        height: auto; /*580px*/
+        padding-top: 30px;
+    }
+
+    #footer_left {
+        /*padding-top: 20px;
+        padding-left: 30px;*/
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #footer_box .col-6{
+        width: calc(100% / 12 *10);
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #footer_box .us {
+        width: 370px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    #footer_box .us_adr {
+        width: 183px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    #footer_box .us_qt {
+        width: 370px;
+        height: 150px;
+        resize: none;
+        background-color: #FFFFFF;
+        border: 3px #708296 solid;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    .box4 {
+        width: 370px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .box4 .check_box {
+        width: 20px;
+        height: 20px;
+    }
+
+    .ptm .btn_sub {
+        width: 150px;
+        height: 35px;
+        background-color: #c4b1bd;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+    }
+}
+/*====================手機結束====================*/

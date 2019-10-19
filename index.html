@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IT360-Rhino產品外觀建模</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <meta name="Title" content="零基礎學Rhino曲面建模">
+    <meta name="Description" content="Rhino是以繪製曲面為主的設計軟體，功能強大且多樣化的3D自由造型建模工具，廣泛應用在工業、珠寶、建築設計等產業，適合3D零基礎新手學習。">
+    <meta name="keywords" content="Rhino,曲面建模,3D建模,NURBS,3D軟體,Alias">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+    new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="banner" class="full-width">
+        <div class="fixed-width">
+            <div id="babg-squ" class="col-7 center">
+                <div class="box5">
+                    <h1>工業設計必學3D軟體</h1>
+                    <p class="main_sub">零基礎學Rhino曲面建模</p>
+                    <p>3D設計專家</p>
+                    <p>鄭宏仁老師</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="time" class="full-width img-car">
+        <div class="box1">
+            <div class="wow bounceIn center" data-wow-delay="0.5s">
+                <img src="icon/event.png" alt="">
+            </div>
+            <div class="col-10 center">
+                <div class="time_text">
+                    <ul>
+                        <li>開課時間：2019/11/25 ~ 12/25</li>
+                        <li>每週一、三、五 19:030~20:00</li>
+                        <li>課程時數：42小時</li>
+                        <li>先備能力：需具備三視圖概念，可在三維空間了解視角位置及建模方向。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="question" class="full-width">
+        <div class="col-10 center clearfix">
+            <div class="col-8 center">
+                <h3>學3D軟體，你是否也有這樣的困擾？</h3>
+            </div>
+            <div class="col-4">
+                <h4>新手進入障礙高</h4>
+                <div class="wow flipInX" data-wow-delay="0.5s">
+                    <img src="icon/angle-double-down-solid-pink.png" alt="">
+                    <h5>操作簡易</h5>
+                    <p>軟體操作簡易且功能強大，可與各類型軟體對接、協同作業，且應用廣泛CP質高。</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4>建模彩現難度高</h4>
+                <div class="wow flipInX" data-wow-delay="1s">
+                    <img src="icon/angle-double-down-solid-pink.png" alt="">
+                    <h5>無痛上手</h5>
+                    <p>軟體功能強大，入門/進階/高階者皆適用的建模軟體，可精確製作建模彩現。</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4>軟體應用範圍少</h4>
+                <div class="wow flipInX" data-wow-delay="1.5s">
+                    <img src="icon/angle-double-down-solid-pink.png" alt="">
+                    <h5>應用廣泛</h5>
+                    <p>可用數值控制工具機氣輸出成形或加工，工業設計、珠寶設計、建築設計等皆有廣泛應用。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="teacher" class="full-width img-car">
+        <div class="box6">
+            <div class="fixed-width">
+                <div class="col-10 center">
+                    <div class="col-5 th_pic">
+                        <div class="wow rollIn" data-wow-delay="1s">
+                            <img src="img/teacher course/8_熊_1.jpg" alt="bear">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <h4>鄭宏仁&emsp;老師</h4>
+                        <p>從處理Alias汽車等級曲面開始，到經營設計公司已有10多年的時間，這幾年來則致力發展3D影像的照片級擬真技術。熟悉多套不同類型的3D軟體並結合多年實務與教學經驗，將軟體的觀念與技巧以淺顯易懂的方式帶進市場。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slogan" class="full-width">
+        <h4>〝由淺入深輕鬆上手，新手設計必修速成〞</h4>
+    </div>
+    <div id="article" class="full-width img-car">
+        <div class="box2">
+            <div class="col-8 center">
+                <h3>Rhino產品外觀建模</h3>
+                <p>Rhino是以繪製NURBS曲面為主的設計軟體，多樣化的強大功能即不受拘束的3D自由造型建模工具，製作用來渲染、動畫、工程、分析、評估以及生產用的3D模型，並可與各類軟體對接、相互協同作業，廣泛應用在工業、珠寶、交通工具、玩具、建築設計等產業，是一款適合3D零基礎新手學習的軟體。</p>
+            </div>
+            <div class="col-8 center">
+                <div class="col-6">
+                    <h4>認識Rhinoceros與基礎操作指令</h4>
+                    <img src="img/IT360-Rhino product/76939867-cad-engineer-s-workplace-close-up-of-engineer-s-hands-working-on-the-notebook-and-tablet-.jpg" alt="">
+                    <p>講話外面當地高效處罰，寶貝找到杭州批准經歷，基礎上門口效果婚姻報價離線歐，協會培養郵編限制帶來方法所說回頭強烈。</p>
+                </div>
+                <div class="col-6">
+                    <h4>Keyshot模型彩現及建模案例練習</h4>
+                    <img src="img/teacher course/22_飾品_1300px.png" alt="">
+                    <p>果婚姻報價離線歐，協會培養郵編限制帶來方法所說回頭強烈時刻發，告訴版本幾天確定受到明星能源兄弟對她創建。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="target" class="full-width">
+        <div class="col-10 center">
+            <div class="col-6">
+                <img src="img/IT360-Rhino product/114779927-group-of-a-young-coworkers-dressed-casually-modeling-3d-project-working-on-computers-in-the-modern-o.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <div class="wow bounceIn" data-wow-delay="0.5s">
+                    <h3>本課程適合學習對象</h3>
+                    <ul class="li-img">
+                        <li class="itm">已從事產品工業設計相關工作
+                            <ul>
+                                <li class="itm_text">工業設計師、建築設計師、造型設計師</li>
+                            </ul>
+                        </li>
+                        <li class="itm">正在學產品工業設計相關技術
+                            <ul>
+                                <li class="itm_text">學生、相關產業人員</li>
+                            </ul>
+                        </li>
+                        <li class="itm">有興趣工業設計領域
+                            <ul>
+                                <li class="itm_text">社會新鮮人、想進入工業設計領域</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="learn" class="full-width img-car">
+        <div class="box3">
+            <div class="fixed-width">
+                <div class="col-10 center">
+                    <div class="col-6">
+                        <div class="learn_text">
+                            <div class="wow bounceIn" data-wow-delay="0.5s">
+                                <ul class="li-img2">
+                                    <li>Rhino軟體基礎操作及常用指令</li>
+                                    <li>掌握Rhino建模技巧基本技巧</li>
+                                    <li>掌握曲面建模控制技巧及排除建模錯誤</li>
+                                    <li>渲染軟體keyshot基本使用</li>
+                                    <li>曲面建模案例練習</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="img/IT360-Rhino product/64370007-hand-presenting-in-palm-interior-design-pattern-mixed-media.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="full-width">
+        <div class="fixed-width">
+            <div class="col-10 center">
+                <h3>免費領取工業設計學習秘笈</h3>
+                <div id="footer_box">
+                    <div id="footer_left" class="col-6">
+                        <img src="img/teacher course/1_USB.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <form id="form1" name="form1" action="" method="post">
+                            <input type="text" name="name" placeholder="姓名" class="us">
+                            <input type="text" name="phone" placeholder="手機" class="us">
+                            <input type="text" name="email" placeholder="Email" class="us">
+                            <select name="addr" id="addr1" class="us_adr">
+                                <option value="00" selected="selected">請選擇</option>
+                                <option value="01">基隆市</option>
+                                <option value="02">台北市</option>
+                                <option value="03">新北市</option>
+                                <option value="04">桃園市</option>
+                                <option value="05">新竹市</option>
+                                <option value="06">新竹縣</option>
+                                <option value="07">苗栗縣</option>
+                                <option value="08">台中市</option>
+                                <option value="10">彰化縣</option>
+                                <option value="11">南投縣</option>
+                                <option value="12">雲林縣</option>
+                                <option value="13">嘉義市</option>
+                                <option value="14">嘉義縣</option>
+                                <option value="15">台南市</option>
+                                <option value="17">高雄市</option>
+                                <option value="19">屏東縣</option>
+                                <option value="20">台東縣</option>
+                                <option value="21">花蓮縣</option>
+                                <option value="22">宜蘭縣</option>
+                                <option value="23">澎湖縣</option>
+                                <option value="24">金門縣</option>
+                                <option value="25">連江縣</option>
+                            </select>
+                            <input type="text" name="addr1" placeholder="路(街)名或鄉里名稱" class="us_adr">
+                            <textarea name="question" id="qu" placeholder="問題" class="us_qt"></textarea>
+                            <div class="box4">
+                                <label for="yes">
+                                    <input type="checkbox" name="per_da" class="check_box">我已詳細閱讀並接受個資保護聲明
+                                </label>
+                            </div>
+                            <div class="ptm">
+                                <input type="submit" name="btn1" value="免費索取" class="btn_sub">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
